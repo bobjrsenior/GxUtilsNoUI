@@ -5,6 +5,7 @@ using System.Drawing;
 using System.Globalization;
 using System.IO;
 
+
 namespace LibGxFormat.ModelLoader
 {
     /// <summary>
@@ -95,6 +96,7 @@ namespace LibGxFormat.ModelLoader
             {
                 while (objParser.ReadNextLine())
                 {
+
                     // Check for empty and comment lines
                     if (!objParser.AdvanceToNextNonWhiteSpace())
                         continue;

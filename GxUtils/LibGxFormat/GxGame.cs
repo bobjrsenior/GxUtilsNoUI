@@ -9,9 +9,6 @@ namespace LibGxFormat
 	/// </summary>
 	public enum GxGame
 	{
-		/// <summary>F-Zero GX</summary>
-        [Description("F-Zero GX")]
-		FZeroGX,
         /// <summary>Super Monkey Ball 1 or 2</summary>
         [Description("Super Monkey Ball")]
 		SuperMonkeyBall,

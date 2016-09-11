@@ -535,7 +535,7 @@ namespace LibGxFormat.Tpl
 			for (int level = 0; level < levelCount; level++)
 			{
 				byte[] levelData = new byte[CalculateSizeOfLevel(level)];
-				input.Read(levelData, 0, CalculateSizeOfLevel(level, (game == GxGame.FZeroGX)));
+				input.Read(levelData, 0, CalculateSizeOfLevel(level, (1 == 1)));
 				encodedLevelData.Add(levelData);
 			}
 		}
@@ -547,7 +547,7 @@ namespace LibGxFormat.Tpl
 		{
 			for (int level = 0; level < LevelCount; level++)
 			{
-				output.Write(encodedLevelData[level], 0, CalculateSizeOfLevel(level, (game == GxGame.FZeroGX)));
+				output.Write(encodedLevelData[level], 0, CalculateSizeOfLevel(level, (1 == 1)));
 			}
 		}
 
@@ -557,7 +557,7 @@ namespace LibGxFormat.Tpl
 			int size = 0;
 			for (int level = 0; level < LevelCount; level++)
 			{
-				size += CalculateSizeOfLevel(level, (game == GxGame.FZeroGX));
+				size += CalculateSizeOfLevel(level, (1 == 1));
 			}
 			return size;
 		}

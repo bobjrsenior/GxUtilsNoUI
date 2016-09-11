@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{407E4B49-2E78-498D-95D0-176B476C5B68}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>GxModelViewer</RootNamespace>
     <AssemblyName>GxModelViewer</AssemblyName>
@@ -75,9 +75,7 @@
     <Compile Include="GxTextureFormatPickerDialog.designer.cs">
       <DependentUpon>GxTextureFormatPickerDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="ModelViewer.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ModelViewer.cs" />
     <Compile Include="ModelViewer.designer.cs">
       <DependentUpon>ModelViewer.cs</DependentUpon>
     </Compile>
